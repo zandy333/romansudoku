@@ -48,7 +48,7 @@
 #menubtn {
   width: 70px;
   height: 70px;
-  position: absolute;
+  position: relative;
   top: 10px;
   left: 10px;
   
@@ -63,7 +63,7 @@
 #logo {
   width: 105px;
   height: 70px;
-  position: absolute;
+  position: relative;
   top: 10px;
   left: 85px;
   
@@ -105,11 +105,10 @@
 #content {
   z-index: 2;
   display: block;
-  justify-content: center;
-  align-items: center;
+  
   /*box-sizing: border-box;*/
   text-align: center;
-  border: 3px solid #c83737;
+  /*border: 3px solid #c83737;*/
 }
 
 #playbtn {
