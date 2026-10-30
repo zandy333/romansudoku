@@ -86,52 +86,7 @@ window.onload=function() {
   let clicks43 = 0;
   let clicks44 = 0;
   let editable = true;
-
-  let game_10_puzzle = "3200400200002400";
-  let game_10_solution = "3241413213242413";
-  //let game_10_solution_diff = "5541513513245513";
-  let game_10_solution_diff = "";
-  let game_10_solution_diff_array = [];
-  
-  const rows = 4;
-  const cols = 4;
-  
-  function buildSolutionDiff() {
-
-    for (let i = 0; i < game_10_puzzle.length; i++) {
-        if (game_10_puzzle[i] == "0") {
-            game_10_solution_diff = game_10_solution_diff + game_10_solution[i];
-        } else {
-            game_10_solution_diff = game_10_solution_diff + "5";
-        }
-    }
-    //alert(game_10_solution_diff);
-  }
-
-  function buildSolutionDiffArray() {
-
-    let charIndex = 0;
-    for (let i = 0; i < 4; i++) {
-        const row = [];
-        for (let j = 0; j < 4; j++) {
-            row.push(game_10_solution_diff[charIndex]);
-            charIndex++;
-        }
-        game_10_solution_diff_array.push(row);
-    }
-
-    /*let array_contents = "";
-    for (let m = 0; m < rows; m++) {
-            for (let n = 0; n < cols; n++) {
-                array_contents = array_contents + game_10_solution_diff_array[m][n];
-            }
-        } 
-    alert(array_contents);*/
-  }
-
-  buildSolutionDiff();
-  buildSolutionDiffArray();
-  
+      
   function displayPortrait() {
 
     for (let i = 0; i < tbl_1.length; i++) {
@@ -187,43 +142,108 @@ window.onload=function() {
     };
   }
 
-  let padlockMN = "";
-  let dMN = "";
-  let pMN = "";
-  let timer4;
-
   function setPadlockPortrait() {
 
-    for (let m = 0; m < rows; m++) {
-        for (let n = 0; n < cols; n++) {
+    padlock11.style.width = "5vw";
+    padlock11.style.height = "5vw";
 
-            if (game_10_solution_diff_array[m][n] == "5") {
-                
-                dMN = "d"+String(m+1)+String(n+1);
-                pMN = "p"+String(m+1)+String(n+1);
+    padlock12.style.width = "5vw";
+    padlock12.style.height = "5vw";
+/*
+    padlock13.style.width = "5vw";
+    padlock13.style.height = "5vw";
 
-                document.getElementById(pMN).style.width = "5vw";
-                document.getElementById(pMN).style.height = "5vw";
-            }
-        }
-    }     
+    padlock14.style.width = "5vw";
+    padlock14.style.height = "5vw";
+*/
+    padlock21.style.width = "5vw";
+    padlock21.style.height = "5vw";
+/*
+    padlock22.style.width = "5vw";
+    padlock22.style.height = "5vw";
+
+    padlock23.style.width = "5vw";
+    padlock23.style.height = "5vw";
+*/
+    padlock24.style.width = "5vw";
+    padlock24.style.height = "5vw";
+/*
+    padlock31.style.width = "5vw";
+    padlock31.style.height = "5vw";
+
+    padlock32.style.width = "5vw";
+    padlock32.style.height = "5vw";
+
+    padlock33.style.width = "5vw";
+    padlock33.style.height = "5vw";
+
+    padlock34.style.width = "5vw";
+    padlock34.style.height = "5vw";
+*/
+    padlock41.style.width = "5vw";
+    padlock41.style.height = "5vw";
+
+    padlock42.style.width = "5vw";
+    padlock42.style.height = "5vw";
+/*
+    padlock43.style.width = "5vw";
+    padlock43.style.height = "5vw";
+
+    padlock44.style.width = "5vw";
+    padlock44.style.height = "5vw";
+*/
   }
 
   function setPadlockLandscape() {
 
-    for (let m = 0; m < rows; m++) {
-        for (let n = 0; n < cols; n++) {
+    padlock11.style.width = "5vh";
+    padlock11.style.height = "5vh";
 
-            if (game_10_solution_diff_array[m][n] == "5") {
-                
-                dMN = "d"+String(m+1)+String(n+1);
-                pMN = "p"+String(m+1)+String(n+1);
+    padlock12.style.width = "5vh";
+    padlock12.style.height = "5vh";
+/*
+    padlock13.style.width = "5vh";
+    padlock13.style.height = "5vh";
 
-                document.getElementById(pMN).style.width = "5vh";
-                document.getElementById(pMN).style.height = "5vh";
-            }
-        }
-    }     
+    padlock14.style.width = "5vh";
+    padlock14.style.height = "5vh";
+*/
+    padlock21.style.width = "5vh";
+    padlock21.style.height = "5vh";
+/*
+    padlock22.style.width = "5vh";
+    padlock22.style.height = "5vh";
+
+    padlock23.style.width = "5vh";
+    padlock23.style.height = "5vh";
+*/
+    padlock24.style.width = "5vh";
+    padlock24.style.height = "5vh";
+/*
+    padlock31.style.width = "5vh";
+    padlock31.style.height = "5vh";
+
+    padlock32.style.width = "5vh";
+    padlock32.style.height = "5vh";
+
+    padlock33.style.width = "5vh";
+    padlock33.style.height = "5vh";
+
+    padlock34.style.width = "5vh";
+    padlock34.style.height = "5vh";
+*/
+    padlock41.style.width = "5vh";
+    padlock41.style.height = "5vh";
+
+    padlock42.style.width = "5vh";
+    padlock42.style.height = "5vh";
+/*
+    padlock43.style.width = "5vh";
+    padlock43.style.height = "5vh";
+
+    padlock44.style.width = "5vh";
+    padlock44.style.height = "5vh";
+  */
   }
 
   function cycleThrough11() {
@@ -582,37 +602,32 @@ window.onload=function() {
     }
   }
 
-  
   function gameLogic() {
 
-    w = window.innerWidth;
-    h = window.innerHeight;
+    padlock11 = document.createElement("img");
+    padlock11.src = "../imgs/padlock.png";
 
-    for (let m = 0; m < rows; m++) {
-        for (let n = 0; n < cols; n++) {
+    padlock12 = document.createElement("img");
+    padlock12.src = "../imgs/padlock.png";
 
-            
-            if (game_10_solution_diff_array[m][n] == "5") {
-                
-                dMN = "d"+String(m+1)+String(n+1);
-                pMN = "p"+String(m+1)+String(n+1);
+    padlock21 = document.createElement("img");
+    padlock21.src = "../imgs/padlock.png";
+ 
+    padlock24 = document.createElement("img");
+    padlock24.src = "../imgs/padlock.png";
 
-                padlockMN = document.createElement("img");
-                padlockMN.src = "../imgs/padlock.png";
-                padlockMN.id = "p"+String(m+1)+String(n+1);
-                document.getElementById(dMN).appendChild(padlockMN);
-                
-                if (w < h) {
-                    document.getElementById(padlockMN.id).style.width = "5vw";
-                    document.getElementById(padlockMN.id).style.height = "5vw";
-                } else {
-                    document.getElementById(padlockMN.id).style.width = "5vh";
-                    document.getElementById(padlockMN.id).style.height = "5vh";
-                }
-            }
-        }
-    }
+    padlock41 = document.createElement("img");
+    padlock41.src = "../imgs/padlock.png";
+
+    padlock42 = document.createElement("img");
+    padlock42.src = "../imgs/padlock.png";
     
+    d11.appendChild(padlock11);
+    d12.appendChild(padlock12);
+    d21.appendChild(padlock21);
+    d24.appendChild(padlock24);
+    d41.appendChild(padlock41);
+    d42.appendChild(padlock42);
      
     c11.style.backgroundImage = Aface3;
     c12.style.backgroundImage = Aface2;
@@ -724,36 +739,25 @@ window.onload=function() {
   }
 
   // Check for portrait orientation
-  let timer1;
-  let timer1a;
   const isPortrait = window.matchMedia("(orientation: portrait)").matches;
 
-    
-
   if (isPortrait) {
-    //clearTimeout(timer1); // Clear any existing timer
-    //timer1 = setTimeout(() => {
       console.log("Device is in portrait mode at initial load.");
       // Perform actions specific to portrait mode
       gameLogic();
       displayPortrait();
       setPadlockPortrait();
-      //alert("Portrait");
+      
+      
 
-     // }, 300); 
-    
   } else {
-    //clearTimeout(timer1a); // Clear any existing timer
-    //timer1a = setTimeout(() => {
       console.log("Device is in landscape mode at initial load.");
       // Perform actions specific to landscape mode
       gameLogic();
       displayLandscape();
       setPadlockLandscape();
-      //alert("Landscape");
-     // }, 300); 
+      
   }
-  
 
 /*
   if (w < h) {
@@ -771,33 +775,24 @@ window.onload=function() {
 */
 
   // Listen for orientation changes
-  /*
-  let timer2;
   window.matchMedia("(orientation: portrait)").addEventListener("change", (e) => {
-    clearTimeout(timer2); // Clear any existing timer
-    timer2 = setTimeout(() => {
+    
+    w = window.innerWidth;
+    h = window.innerHeight;
 
     if (e.matches) {
-    
-        displayPortrait();
-        setPadlockPortrait();
-        alert("Portrait");
-
+      displayPortrait();
+      setPadlockPortrait();
+     
     } else {
- 
       displayLandscape();
       setPadlockLandscape();
-      alert("Landscape");
       
     } 
-    }, 300); 
     
   });
-  */
 
-let resizeTimer;
-let resizeTimer1;
-let resizeTimer2;
+  let resizeTimer;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer); // Clear any existing timer
     resizeTimer = setTimeout(() => {
@@ -809,26 +804,21 @@ let resizeTimer2;
       h = window.innerHeight;
 
       if ((w < h)) {
-      //clearTimeout(resizeTimer1); // Clear any existing timer
-      //resizeTimer1 = setTimeout(() => {
+      
       displayPortrait();
       setPadlockPortrait();
-      //alert("Portrait");
-      //}, 100);
+      
           
       } else {
-      //clearTimeout(resizeTimer2); // Clear any existing timer
-      //resizeTimer2 = setTimeout(() => {
+      
       displayLandscape();
       setPadlockLandscape();
-      //alert("Landscape");
-      //}, 100);
-      }
-
+      
+      
+        }
     }, 200);
 });
   
-
 // Listen for viewport resize
 /*let resizeTimer;
 window.addEventListener("resize", () => {

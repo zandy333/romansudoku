@@ -117,10 +117,10 @@ td/*, th*/ {
   
 }
 
-/*tbody, tr {
+tbody, tr {
   /*background-color: transparent;*/
-/*}
-*/
+}
+
 
 #c11, #c12, #c13, #c14, #c21, #c22, #c23, #c24, #c31, #c32, #c33, #c34, #c41, #c42, #c43, #c44 {
   background-repeat: no-repeat;
