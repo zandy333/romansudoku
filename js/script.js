@@ -6,29 +6,6 @@ window.onload=function() {
   let w = window.innerWidth;
   let h = window.innerHeight;
 
-  
-  // define a function that sets min-height of my-element to window.innerHeight:
-
-const setHeight = () => {
-    document.getElementById("container").style.minHeight = window.innerHeight + "px"
-};
-
-// define mobile screen size:
-
-let deviceWidth = window.matchMedia("(width: 100vw)");
-
-if (deviceWidth.matches) {
-// set an event listener that detects when innerHeight changes:
-
-    window.addEventListener("resize", setHeight);
-
-// call the function once to set initial height:
-
-    setHeight();
-}
-
-
-
 function scrollX() {
     let posX = 0;
     let speed = 0.1; // Pixels per frame

@@ -8,17 +8,13 @@
   outline: 0; /* ??? Check this >>> */
   font-size: 0; /* ??? Check this >>> */
 }
-/*
-html {
-  height: 100vh;
-}
 
-body {
-  min-height: 100%;
-  margin: 0;
-}
-*/
 #container {
+
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  
   display: flex;
   position: relative;
 
