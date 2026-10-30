@@ -89,15 +89,14 @@ function scrollX() {
       console.log("Device is in portrait mode at initial load.");
       // Perform actions specific to portrait mode
       
-      //displayPortrait();
-      scrollX();
+      //scrollX();
       
 
   } else {
       console.log("Device is in landscape mode at initial load.");
       // Perform actions specific to landscape mode
-      //displayLandscape();
-      scrollY();
+      
+      //scrollY();
   }
 
   // Listen for orientation changes
