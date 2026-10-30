@@ -8,19 +8,28 @@
   outline: 0; /* ??? Check this >>> */
   font-size: 0; /* ??? Check this >>> */
 }
-
-#container {
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  position: relative;
-  
 /*
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+}
+*/
+#container {
+  display: flex;
+  position: relative;
+
+  /*justify-content: center;
+  align-items: center;*/
+
   background-image: url("../imgs/bkg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  */
+  
 
 }
 

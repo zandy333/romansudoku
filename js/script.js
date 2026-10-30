@@ -5,6 +5,9 @@ window.onload=function() {
   let content = document.getElementById("content");
   let w = window.innerWidth;
   let h = window.innerHeight;
+
+  container.style.width = "100vw";
+  container.style.height = "100vh";
   
 function scrollX() {
     let posX = 0;
@@ -89,14 +92,14 @@ function scrollX() {
       console.log("Device is in portrait mode at initial load.");
       // Perform actions specific to portrait mode
       
-      //scrollX();
+      scrollX();
       
 
   } else {
       console.log("Device is in landscape mode at initial load.");
       // Perform actions specific to landscape mode
       
-      //scrollY();
+      scrollY();
   }
 
   // Listen for orientation changes
@@ -106,10 +109,10 @@ function scrollX() {
     h = window.innerHeight;
 
     if (e.matches) {
-      //displayPortrait();
+
       scrollX();
     } else {
-      //displayLandscape();
+
       scrollY();
     } 
     
