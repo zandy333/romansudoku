@@ -15,7 +15,7 @@ const setHeight = () => {
 
 // define mobile screen size:
 
-let deviceWidth = window.matchMedia("(max-width: 100vw)");
+let deviceWidth = window.matchMedia("(width: 100vw)");
 
 if (deviceWidth.matches) {
 // set an event listener that detects when innerHeight changes:
