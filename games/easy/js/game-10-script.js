@@ -86,7 +86,22 @@ window.onload=function() {
   let clicks43 = 0;
   let clicks44 = 0;
   let editable = true;
-      
+
+  function maximizeElement() {
+  const fullScreenDiv = document.getElementById("container");
+  
+  // Apply the inner width and height of the viewport
+  fullScreenDiv.style.width = window.innerWidth + "px";
+  fullScreenDiv.style.height = window.innerHeight + "px";
+}
+
+// Run the function when the page loads
+window.addEventListener('load', maximizeElement);
+
+// Run the function again whenever the browser window is resized
+window.addEventListener('resize', maximizeElement);
+
+
   function displayPortrait() {
 
     for (let i = 0; i < tbl_1.length; i++) {
