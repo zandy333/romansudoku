@@ -9,11 +9,17 @@
   font-size: 0; /* ??? Check this >>> */
 }
 
+body {
+  overflow: hidden;
+}
+
 #container {
   width: 100vw;
-  height: 100vh;
+  height: 101vh;
   display: flex;
   position: relative;
+
+  
 
   /**/
   justify-content: center;
