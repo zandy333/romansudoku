@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after { 
+  margin: 0; 
+  padding: 0; 
+  border: 0;
+  box-sizing: border-box; /* ??? Check this >>> */
+  outline: 0; /* ??? Check this >>> */
+  font-size: 0; /* ??? Check this >>> */
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+
+  /**/
+  justify-content: center;
+  align-items: center;
+  /**/
+
+  /*background-color: rgb(2, 49, 87);*/
+  background-color: rgb(39, 230, 255);
+}
+
+#menubtn {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  
+}
+
+#anchor {
+  text-decoration: none;
+}
+
+/*
+#btn {
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+#btn a {
+  font-size: 14px;
+  width: 70px;
+  height: 70px;
+}*/
+
+#menuimg {
+  width: 70px;
+  height: 70px;
+  border: 0;
+}
+
+#content {
+  /*background-color: rgb(255, 255, 255);*/
+
+  /**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*box-sizing: border-box;*/
+  text-align: center;
+  /**/
+}
+
+.tbl_1 {
+  /*
+  background-color: rgb(255, 223, 134);*/
+  /*border-collapse: collapse;*/
+  /*background-color: rgb(21, 1, 77);*/
+  background-color: #88ffe5;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tbl_2 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+td/*, th*/ {
+  padding: 0;
+  /*background-color: transparent;*/
+  
+}
+
+tbody, tr {
+  /*background-color: transparent;*/
+}
+
+
+#c11, #c12, #c13, #c14, #c21, #c22, #c23, #c24, #c31, #c32, #c33, #c34, #c41, #c42, #c43, #c44 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} 
+
+#d11, #d12, #d13, #d14, #d21, #d22, #d23, #d24, #d31, #d32, #d33, #d34, #d41, #d42, #d43, #d44 {
+  text-align: right;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
