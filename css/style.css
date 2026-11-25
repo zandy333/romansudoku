@@ -1,3 +1,4 @@
+/*
 *,
 *::before,
 *::after { 
@@ -5,9 +6,9 @@
   padding: 0; 
   border: 0;
   box-sizing: border-box; /* ??? Check this >>> */
-  outline: 0; /* ??? Check this >>> */
-  font-size: 0; /* ??? Check this >>> */
-}
+ /* outline: 0; /* ??? Check this >>> */
+  /*font-size: 0; /* ??? Check this >>> */
+/*}
 
 /*
 #container {
