@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>Grafiku</title>
-    <!--link rel="stylesheet" href="css/bulma.min.css"-->
+    <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css"/>
-    <!--script type='text/javascript' src='js/matter.min.js'></script-->
 </head>
 <body>
-    <div id="container">
+    <!-- Use Bulma CSS Framework's "hero" to fix the browser address bar issue on Chrome on Android -->
+    <section class="hero is-info is-fullheight">
+    <!--div id="container"-->
+    <div class="hero-body">
         <div id="menubtn">
             <!--div id="btn"--><a id="anchor" href="#"><img id="menuimg" src="imgs/menu.png" /></a><!--/div-->
         </div>
@@ -80,6 +82,7 @@
             </table>
         </div>
     </div>
+    </section>
     <script type="text/javascript" src="js/game-script.js"></script>
 </body>
 </html>

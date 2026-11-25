@@ -9,19 +9,22 @@
   font-size: 0; /* ??? Check this >>> */
 }
 
+/*
 #container {
   width: 100vw;
   height: 100vh;
   display: flex;
   position: relative;
-
-  /**/
   justify-content: center;
   align-items: center;
-  /**/
-
-  /*background-color: rgb(2, 49, 87);*/
-  background-color: rgb(39, 230, 255);
+  background-color: rgb(2, 49, 87);
+}
+*/
+.hero-body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 #menubtn {
@@ -73,7 +76,7 @@
   background-color: rgb(255, 223, 134);*/
   /*border-collapse: collapse;*/
   /*background-color: rgb(21, 1, 77);*/
-  background-color: #88ffe5;
+  background-color: #122542;
   border-spacing: 0;
   margin: 0;
   padding: 0;
