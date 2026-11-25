@@ -20,12 +20,12 @@
   background-color: rgb(2, 49, 87);
 }
 */
-.hero-body {
-  display: block;
-  /*position: relative;
-  /*justify-content: center;
-  align-items: center;*/
-}
+/*.hero-body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}*/
 
 #menubtn {
   width: 70px;
